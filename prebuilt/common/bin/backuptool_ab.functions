@@ -39,7 +39,7 @@ backup_file() {
 
 restore_file() {
   if [ -e "$C/$1" -o -L "$C/$1" ]; then
-    move_file "$C/$1" $(get_output_path "$1");
+    move_file "$C/$1" "/postinstall/$1";
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
       rm $(get_output_path "$2");

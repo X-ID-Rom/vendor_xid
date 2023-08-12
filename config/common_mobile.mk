@@ -14,17 +14,29 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
-    ExactCalculator \
-    Jelly
+    LiveWallpapersPicker \
+    PhotoTable
 
-ifeq ($(PRODUCT_TYPE), go)
+# AOSP packages
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
+    Email \
+    ExactCalculator \
+    Exchange2
 
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
-else
+# Lineage packages
+PRODUCT_PACKAGES += \
+    AudioFX \
+    Backgrounds \
+    Eleven \
+    Etar \
+    Jelly \
+    LockClock \
+    Profiles \
+    Seedvault \
+    TrebuchetQuickStep \
+    WeatherProvider
+
+# Accents
 PRODUCT_PACKAGES += \
     TrebuchetQuickStep
 
